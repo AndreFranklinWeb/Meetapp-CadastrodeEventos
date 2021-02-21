@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Primeira Pagina</title>
+</h:head>
+
+<h:body>
+	<h1>Primeira Pagina Jsf</h1>
+
+
+	<h:form>
+		<!--		
+			<h:panelGrid columns="1">
+			<h:outputText value="Nome" />
+			<h:inputText />
+
+			<h:outputText value="Btn" />
+			<h:commandButton value="Enviar" />
+
+			<h:outputText value="Pwd" />
+			<h:inputSecret />
+
+			<h:outputText />
+			<h:selectManyCheckbox>
+				<f:selectItem itemLabel="Java 8" itemValue="Java8" />
+				<f:selectItem itemLabel="Java 9" itemValue="Java9" />
+			</h:selectManyCheckbox>
+
+			<h:outputText value="combobox" />
+			<h:selectOneMenu>
+				<f:selectItem itemLabel="Java 8" itemValue="Java8" />
+				<f:selectItem itemLabel="Java 9" itemValue="Java9" />
+			</h:selectOneMenu>
+
+			<h:selectOneRadio>
+				<f:selectItem itemLabel="Java 8" itemValue="Java8" />
+				<f:selectItem itemLabel="Java 9" itemValue="Java9" />
+			</h:selectOneRadio>
+
+			<h:inputTextarea value="Descrição" />
+  
+		</h:panelGrid> -->
+		<!-- Formulário -->
+		<h:form>
+			<p:menubar>
+				<p:submenu label="Arquivo">
+					<p:menuitem value="Empresa" url="#" />
+					<p:menuitem value="Site" url="#" />
+					<p:menuitem value="Sair" url="#" />
+				</p:submenu>
+
+				<p:submenu label="Cadastros">
+					<p:menuitem value="Fornecedores" url="#" />
+					<p:menuitem value="Produtos" url="#" />
+				</p:submenu>
+
+				<p:submenu label="Configurações">
+				</p:submenu>
+
+				<p:submenu label="Ajuda">
+					<p:menuitem value="Sobre" url="#" />
+				</p:submenu>
+			</p:menubar>
+		</h:form>
+
+		<h:panelGroup>
+
+			<div class="ui-fluid p-formgrid p-grid">
+
+				<h:panelGrid columns="3">
+					<h:panelGrid>
+						<div class="p-field p-col-12 p-md-6">
+							<p:outputLabel for="firstname" value="Firstname" />
+							<p:inputText id="firstname" />
+						</div>
+					</h:panelGrid>
+
+					<h:panelGrid>
+						<div class="p-field p-col-12 p-md-6">
+							<p:outputLabel for="lastname" value="Lastname" />
+							<p:inputText id="lastname" />
+						</div>
+					</h:panelGrid>
+
+					<h:panelGrid>
+						<div class="p-field p-col-12">
+							<p:outputLabel for="address" value="Address" />
+							<p:inputText id="address" />
+						</div>
+					</h:panelGrid>
+				</h:panelGrid>
+
+				<h:panelGrid columns="3">
+					<h:panelGrid>
+						<div class="p-field p-col-12 p-md-6">
+							<p:outputLabel for="city" value="City" />
+							<p:inputText id="city" />
+						</div>
+					</h:panelGrid>
+					<h:panelGrid>
+						<div class="p-field p-col-12 p-md-3">
+							<p:outputLabel for="state" value="State" />
+							<p:selectOneMenu id="state">
+								<f:selectItem itemLabel="Select One" itemValue="#{null}"
+									noSelectionOption="true" />
+								<f:selectItem itemLabel="Option 1" itemValue="Option 1" />
+								<f:selectItem itemLabel="Option 2" itemValue="Option 2" />
+								<f:selectItem itemLabel="Option 3" itemValue="Option 3" />
+							</p:selectOneMenu>
+						</div>
+					</h:panelGrid>
+					<h:panelGrid>
+						<div class="p-field p-col-12 p-md-3">
+							<p:outputLabel for="zip" value="Zip" />
+							<p:inputText id="zip" />
+						</div>
+					</h:panelGrid>
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="4">
+					<h:panelGrid>
+						<div class="p-field ui-fluid">
+							<p:outputLabel for="username" value="Username" />
+							<p:inputText id="username" />
+						</div>
+					</h:panelGrid>
+					<h:panelGrid>
+						<div class="p-field ui-fluid">
+							<p:outputLabel for="username" value="Senha" />
+							<p:password id="pwd" />
+						</div>
+					</h:panelGrid>
+				</h:panelGrid>
+
+			</div>
+		</h:panelGroup>
+
+	</h:form>
+
+	<h5>Rounded Buttons</h5>
+	<p:button value="Primary" styleClass="rounded-button" />
+	<p:button value="Secondary"
+		styleClass="rounded-button ui-button-secondary" />
+	<p:button value="Success" styleClass="rounded-button ui-button-success" />
+	<p:button value="Info" styleClass="rounded-button ui-button-info" />
+	<p:button value="Warning" styleClass="rounded-button ui-button-warning" />
+	<p:button value="Help" styleClass="rounded-button ui-button-help" />
+	<p:button value="Danger" styleClass="rounded-button ui-button-danger" />
+
+	
+
+</h:body>
+
+
+
+</html>
